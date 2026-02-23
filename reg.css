@@ -1,0 +1,314 @@
+:root {
+  --primary-color: #8b5e3c;
+  --secondary-color: #3b241b;
+  --accent-color: #d4a574;
+  --light-bg: #faf8f6;
+  --white: #ffffff;
+  --text-dark: #2d241e;
+  --text-light: #6b4f3a;
+  --border-color: #e6dbd1;
+  --shadow: 0 2px 12px rgba(48, 47, 47, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    "Space Grotesk",
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+  background: var(--light-bg);
+  color: var(--text-dark);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 16px;
+}
+
+.card {
+  width: min(520px, 100%);
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 34px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.card img {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.card h1 {
+  font-size: 32px;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.card p.sub {
+  text-align: center;
+  color: var(--text-light);
+  margin-bottom: 24px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.msg {
+  min-height: 18px;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.msg.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.msg.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+label {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 6px;
+  display: block;
+  color: var(--text-dark);
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.input-wrap .material-symbols-outlined {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: rgba(139, 94, 60, 0.35);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  height: 52px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 0 14px 0 44px;
+  font-size: 15px;
+  outline: none;
+  color: var(--text-dark);
+  background: var(--white);
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+input::placeholder {
+  color: rgba(139, 94, 60, 0.35);
+}
+
+input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(139, 94, 60, 0.12);
+}
+
+.terms {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  color: var(--text-light);
+  font-size: 13px;
+  line-height: 1.4;
+  margin-top: 4px;
+}
+
+.terms input {
+  margin-top: 2px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: var(--primary-color);
+}
+
+.terms a {
+  color: var(--primary-color);
+  font-weight: 800;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.terms a:hover {
+  color: var(--secondary-color);
+}
+
+button {
+  height: 54px;
+  border: none;
+  border-radius: 12px;
+  background: var(--secondary-color);
+  color: var(--white);
+  font-weight: 900;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.bottom {
+  margin-top: 18px;
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+  padding-top: 16px;
+  color: var(--text-light);
+  font-size: 14px;
+}
+
+.bottom a {
+  color: var(--primary-color);
+  font-weight: 900;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.bottom a:hover {
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
+
+footer {
+  border-top: 1px solid var(--border-color);
+  padding: 18px 16px;
+  text-align: center;
+  color: rgba(139, 94, 60, 0.45);
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 12px;
+  background: var(--white);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  main {
+    padding: 20px 16px;
+  }
+
+  .card {
+    padding: 26px;
+  }
+
+  .card h1 {
+    font-size: 28px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    height: 48px;
+    font-size: 14px;
+  }
+
+  button {
+    height: 50px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 15px 12px;
+  }
+
+  .card {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .card h1 {
+    font-size: 24px;
+  }
+
+  .card p.sub {
+    font-size: 13px;
+  }
+
+  form {
+    gap: 12px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    height: 44px;
+    padding: 0 10px 0 40px;
+    font-size: 13px;
+    border-radius: 10px;
+  }
+
+  .input-wrap .material-symbols-outlined {
+    left: 10px;
+    font-size: 18px;
+  }
+
+  .terms {
+    font-size: 12px;
+  }
+
+  .terms input {
+    width: 16px;
+    height: 16px;
+  }
+
+  button {
+    height: 44px;
+    font-size: 13px;
+  }
+
+  .bottom {
+    font-size: 12px;
+  }
+}

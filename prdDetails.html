@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details - Tech Store</title>
+    <link rel="stylesheet" href="prdDetails.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <i class="fas fa-laptop"></i>
+          <span>Tech Store</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="brands.html">Products</a></li>
+          <li>
+            <a href="cart.html"
+              >Cart <span id="cartCount" class="badge">0</span></a
+            >
+          </li>
+          <li><a href="logIn.html" class="btn-login">Login</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb-wrapper">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> / <a href="brands.html">Products</a> /
+          <span id="bcName">Product</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUCT DETAILS -->
+    <div class="container main">
+      <div class="product-wrapper">
+        <!-- LEFT - IMAGE -->
+        <div class="left-col">
+          <div class="card">
+            <img id="mainImg" class="main-img" src="" alt="Product" />
+          </div>
+
+          <div id="thumbs" class="thumbs"></div>
+
+          <div class="card specs">
+            <h3 class="sec-title">Specifications</h3>
+            <div id="specGrid" class="spec-grid"></div>
+          </div>
+        </div>
+
+        <!-- RIGHT - INFO -->
+        <div class="right-col">
+          <h1 id="title" class="title">Product Title</h1>
+
+          <p id="desc" class="desc">Product description</p>
+
+          <div class="price-section">
+            <span id="newPrice" class="new-price">0 EGP</span>
+          </div>
+
+          <div class="buttons-section">
+            <button id="addToCartBtn" class="btn btn-primary" type="button">
+              <i class="fas fa-shopping-cart"></i> Add to Cart
+            </button>
+
+            <button id="buyNowBtn" class="btn btn-secondary" type="button">
+              <i class="fas fa-bolt"></i> Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-section">
+          <h4>Tech Store</h4>
+          <p>Best laptops & accessories for professionals</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="brands.html?category=Dell">Dell</a></li>
+            <li><a href="brands.html?category=HP">HP</a></li>
+            <li><a href="brands.html?category=Lenovo">Lenovo</a></li>
+            <li><a href="brands.html?category=Asus">Asus</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Follow</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Tech Store. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./chatbot.js"></script>
+    <script src="prdDetails.js"></script>
+    <script>
+      // Hamburger menu
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+      hamburger &&
+        hamburger.addEventListener("click", () => {
+          navMenu.classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>

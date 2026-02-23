@@ -1,0 +1,258 @@
+[
+    {
+        "id": 1,
+        "name": "Dell Inspiron 15",
+        "price": 18500,
+        "description": "Intel Core i5 - 8GB RAM",
+        "category": "Dell",
+        "image": "./prdImage/Dell/dell1.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "Dell Latitude 5420",
+        "price": 22000,
+        "description": "Intel Core i7 - 16GB RAM",
+        "category": "Dell",
+        "image": "./prdImage/Dell/dell2.jpeg"
+    },
+    {
+        "id": 3,
+        "name": "Dell Vostro 3510",
+        "price": 17000,
+        "description": "Intel Core i3 - 8GB RAM",
+        "category": "Dell",
+        "image": "./prdImage/Dell/dell3.jpeg"
+    },
+    {
+        "id": 4,
+        "name": "Dell XPS 13",
+        "price": 32000,
+        "description": "Intel Core i7 - 16GB RAM",
+        "category": "Dell",
+        "image": "./prdImage/Dell/dell4.jpeg"
+    },
+    {
+        "id": 5,
+        "name": "Dell G15 Gaming",
+        "price": 29000,
+        "description": "Intel Core i7 - 16GB RAM",
+        "category": "Dell",
+        "image": "./prdImage/Dell/dell5.jpeg"
+    },
+    {
+        "id": 6,
+        "name": "Dell Precision 3560",
+        "price": 35000,
+        "description": "Intel Core i9 - 32GB RAM",
+        "category": "Dell",
+        "image": "./prdImage/Dell/dell1.jpeg"
+    },
+    {
+        "id": 7,
+        "name": "HP Victos 15",
+        "price": 19000,
+        "description": "Intel Core i5 - 8GB RAM",
+        "category": "HP",
+        "image": "./prdImage/hp/hp1.jpeg"
+    },
+    {
+        "id": 8,
+        "name": "HP EliteBook 840",
+        "price": 27000,
+        "description": "Intel Core i7 - 16GB RAM",
+        "category": "HP",
+        "image": "./prdImage/hp/hp2.jpeg"
+    },
+    {
+        "id": 9,
+        "name": "HP ProBook 450",
+        "price": 21000,
+        "description": "Intel Core i5 - 16GB RAM",
+        "category": "HP",
+        "image": "./prdImage/hp/hp3.jpeg"
+    },
+    {
+        "id": 10,
+        "name": "HP Victus Gaming",
+        "price": 30000,
+        "description": "Intel Core i7 - 16GB RAM",
+        "category": "HP",
+        "image": "./prdImage/hp/hp4.jpeg"
+    },
+    {
+        "id": 11,
+        "name": "HP Omen",
+        "price": 36000,
+        "description": "Intel Core i9 - 32GB RAM",
+        "category": "HP",
+        "image": "./prdImage/hp/hp5.jpeg"
+    },
+    {
+        "id": 12,
+        "name": "HP Stream",
+        "price": 12000,
+        "description": "Intel Celeron - 4GB RAM",
+        "category": "HP",
+        "image": "./prdImage/hp/hp1.jpeg"
+    },
+    {
+        "id": 13,
+        "name": "Asus VivoBook",
+        "price": 18000,
+        "description": "Intel Core i5 - 8GB RAM",
+        "category": "Asus",
+        "image": "./prdImage/Asus/Asus2.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Asus ZenBook",
+        "price": 26000,
+        "description": "Intel Core i7 - 16GB RAM",
+        "category": "Asus",
+        "image": "./prdImage/Asus/Asus5.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Asus TUF Gaming",
+        "price": 28000,
+        "description": "Intel Core i7 - 16GB RAM",
+        "category": "Asus",
+        "image": "./prdImage/Asus/Asus1.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Asus ROG Strix",
+        "price": 40000,
+        "description": "Intel Core i9 - 32GB RAM",
+        "category": "Asus",
+        "image": "./prdImage/Asus/Asus2.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Asus ExpertBook",
+        "price": 23000,
+        "description": "Intel Core i5 - 16GB RAM",
+        "category": "Asus",
+        "image": "./prdImage/Asus/Asus3.jpg"
+    },
+    {
+        "id": 18,
+        "name": "Asus Chromebook",
+        "price": 13000,
+        "description": "Intel Celeron - 4GB RAM",
+        "category": "Asus",
+        "image": "./prdImage/Asus/Asus4.jpg"
+    },
+    {
+        "id": 19,
+        "name": "MacBook Air M1",
+        "price": 38000,
+        "description": "Apple M1 - 8GB RAM",
+        "category": "Apple",
+        "image": "./prdImage/mac/mac4.jpg"
+    },
+    {
+        "id": 20,
+        "name": "MacBook Air M2",
+        "price": 45000,
+        "description": "Apple M2 - 8GB RAM",
+        "category": "Apple",
+        "image": "./prdImage/mac/mac1.jpg"
+    },
+    {
+        "id": 21,
+        "name": "MacBook Pro 13",
+        "price": 52000,
+        "description": "Apple M2 - 16GB RAM",
+        "category": "Apple",
+        "image": "./prdImage/mac/mac3.jpg"
+    },
+    {
+        "id": 22,
+        "name": "MacBook Pro 14",
+        "price": 65000,
+        "description": "Apple M2 Pro - 16GB RAM",
+        "category": "Apple",
+        "image": "./prdImage/mac/mac5.jpg"
+    },
+    {
+        "id": 23,
+        "name": "MacBook Pro 16",
+        "price": 78000,
+        "description": "Apple M2 Max - 32GB RAM",
+        "category": "Apple",
+        "image": "./prdImage/mac/mac2.jpg"
+    },
+    {
+        "id": 24,
+        "name": "MacBook Pro M1",
+        "price": 48000,
+        "description": "Apple M1 - 16GB RAM",
+        "category": "Apple",
+        "image": "./prdImage/mac/mac3.jpg"
+    },
+    {
+        "id": 25,
+        "name": "Lenovo IdeaPad 3",
+        "price": 16000,
+        "description": "Intel Core i3 - 8GB RAM",
+        "category": "Lenovo",
+        "image": "./prdImage/Lenovo/leno1.jpg"
+    },
+    {
+        "id": 26,
+        "name": "Lenovo IdeaPad 5",
+        "price": 20000,
+        "description": "Intel Core i5 - 16GB RAM",
+        "category": "Lenovo",
+        "image": "./prdImage/Lenovo/leno2.jpg"
+    },
+    {
+        "id": 27,
+        "name": "Lenovo ThinkPad X1",
+        "price": 34000,
+        "description": "Intel Core i7 - 16GB RAM",
+        "category": "Lenovo",
+        "image": "./prdImage/Lenovo/leno3.jpg"
+    },
+    {
+        "id": 28,
+        "name": "Lenovo Legion 5",
+        "price": 31000,
+        "description": "Intel Core i7 - 16GB RAM",
+        "category": "Lenovo",
+        "image": "./prdImage/Lenovo/leno4.jpg"
+    },
+    {
+        "id": 29,
+        "name": "Lenovo Yoga Slim",
+        "price": 27000,
+        "description": "Intel Core i7 - 16GB RAM",
+        "category": "Lenovo",
+        "image": "./prdImage/Lenovo/leno2.jpg"
+    },
+    {
+        "id": 30,
+        "name": "Lenovo ThinkBook",
+        "price": 23000,
+        "description": "Intel Core i5 - 16GB RAM",
+        "category": "Lenovo",
+        "image": "./prdImage/Lenovo/leno1.jpg"
+    },
+       {
+        "id": 31,
+        "name": "Dell Vostro 3510",
+        "price": 17000,
+        "description": "Intel Core i3 - 8GB RAM",
+        "category": "Dell",
+        "image": "./media/d3.jfif"
+    },
+    {
+        "id": 32,
+        "name": "HP Pavilion 15",
+        "price": 19000,
+        "description": "Intel Core i5 - 8GB RAM",
+        "category": "HP",
+        "image": "./media/h1.jfif"
+    }
+]

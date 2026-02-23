@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compu Store - Login</title>
+    <link rel="icon" type="image/svg+xml" href="Images/iconTitle.svg" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="logIn.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- LEFT -->
+      <div class="left">
+        <div class="left-content">
+          <div class="brand">
+            <a href="index.html">
+              <img
+                src="./Images/iconTitle.svg"
+                alt="logo-site"
+                class="logo"
+                width="100px"
+                height="100px"
+              />
+            </a>
+            <h1><span>Compu Store</span></h1>
+          </div>
+
+          <div class="hero">
+            <h1>Elevate your workspace<br />with premium tech.</h1>
+            <p>
+              Discover curated high-performance laptops from industry leaders
+              tailored for professionals who value excellence.
+            </p>
+          </div>
+
+          <div class="footer">© 2024 Compu Store</div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="right">
+        <div class="form-box">
+          <h2>Welcome Back</h2>
+          <p class="sub">Please enter your details to sign in.</p>
+
+          <form id="loginForm" novalidate>
+            <p id="msg" class="msg"></p>
+
+            <label for="loginEmail">Email Address</label>
+            <input
+              id="loginEmail"
+              type="email"
+              placeholder="name@company.com"
+            />
+
+            <label for="loginPassword">Password</label>
+            <input id="loginPassword" type="password" placeholder="••••••••" />
+
+            <div class="row">
+              <a href="#">Forgot password?</a>
+            </div>
+            <div class="check">
+              <input type="checkbox" />
+              <span>Remember me </span>
+            </div>
+
+            <button type="submit" id="login-btn">Sign In</button>
+          </form>
+
+          <p class="bottom">
+            Don’t have an account?
+            <a href="reg.html">Create an account</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./chatbot.js"></script>
+    <script src="logIn.js"></script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Store - Products</title>
+    <link rel="stylesheet" href="./brands.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <i class="fas fa-laptop"></i>
+          <span>Tech Store</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="brands.html">Products</a></li>
+          <li>
+            <a href="cart.html"
+              >Cart <span id="cartCount" class="badge">0</span></a
+            >
+          </li>
+          <li><a href="logIn.html" class="btn-login">Login</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <h1>Laptop Market</h1>
+    <main class="main">
+      <aside class="sidebar">
+        <input type="text" id="searchInput" placeholder="Search by Name..." />
+        <h2>Filters</h2>
+        <hr />
+        <h4>BRAND</h4>
+
+        <label
+          ><input type="checkbox" class="brand-filter" value="Asus" />
+          Asus</label
+        ><br />
+        <label
+          ><input type="checkbox" class="brand-filter" value="Dell" />
+          Dell</label
+        ><br />
+        <label
+          ><input type="checkbox" class="brand-filter" value="HP" /> HP</label
+        ><br />
+        <label
+          ><input type="checkbox" class="brand-filter" value="Apple" />
+          Apple</label
+        ><br />
+        <label
+          ><input type="checkbox" class="brand-filter" value="Lenovo" />
+          Lenovo</label
+        ><br />
+        <button id="apply-btn">Apply Filters</button>
+        <button id="reset-btn">Reset Filters</button>
+      </aside>
+
+      <section id="products-container"></section>
+    </main>
+
+    <script src="./chatbot.js"></script>
+    <script src="./brands.js"></script>
+    <script>
+      // Update cart badge
+      document.addEventListener("DOMContentLoaded", function () {
+        function updateCartBadge() {
+          const cart = JSON.parse(localStorage.getItem("cart")) || [];
+          const totalItems = cart.reduce(
+            (sum, item) => sum + (item.quantity || 1),
+            0,
+          );
+          document.getElementById("cart-badge").textContent = totalItems;
+        }
+        updateCartBadge();
+        window.addEventListener("storage", updateCartBadge);
+      });
+
+      // Hamburger menu
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+      hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

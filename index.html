@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Store - Home</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <i class="fas fa-laptop"></i>
+          <span>Tech Store</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="brands.html">Products</a></li>
+          <li>
+            <a href="cart.html"
+              >Cart<span id="cart-badge" class="badge">0</span></a
+            >
+          </li>
+          <li><a href="logIn.html" class="btn-login">Login</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Premium Laptops for Your Success</h1>
+        <p>
+          Discover the latest technology with premium brands at unbeatable
+          prices
+        </p>
+        <a href="brands.html" class="btn btn-primary">Shop Now</a>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS SECTION -->
+    <section class="featured-section">
+      <div class="container">
+        <h2 class="section-title">Featured Products</h2>
+
+        <!-- CATEGORY FILTERS -->
+        <div class="filters-wrapper">
+          <button class="filter-btn active" data-category="all">
+            All Products
+          </button>
+          <button class="filter-btn" data-category="Dell">Dell</button>
+          <button class="filter-btn" data-category="HP">HP</button>
+          <button class="filter-btn" data-category="Asus">Asus</button>
+          <button class="filter-btn" data-category="Apple">Apple</button>
+          <button class="filter-btn" data-category="Lenovo">Lenovo</button>
+        </div>
+
+        <!-- PRODUCTS GRID -->
+        <div class="products-grid" id="products-grid">
+          <!-- Products will be loaded here by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="features-section">
+      <div class="container">
+        <h2 class="section-title">Why Choose Us?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <i class="fas fa-shipping-fast"></i>
+            <h3>Fast Shipping</h3>
+            <p>Get your products delivered within 2-3 business days</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-lock"></i>
+            <h3>Secure Payment</h3>
+            <p>Your transactions are 100% secure and encrypted</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-undo"></i>
+            <h3>Easy Returns</h3>
+            <p>30-day money-back guarantee on all products</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-headset"></i>
+            <h3>24/7 Support</h3>
+            <p>Our customer support team is always here to help</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stat-item">
+          <h3>10K+</h3>
+          <p>Happy Customers</p>
+        </div>
+        <div class="stat-item">
+          <h3>500+</h3>
+          <p>Products</p>
+        </div>
+        <div class="stat-item">
+          <h3>50+</h3>
+          <p>Brands</p>
+        </div>
+        <div class="stat-item">
+          <h3>99%</h3>
+          <p>Satisfaction</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Get exclusive deals and updates delivered to your inbox</p>
+          <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>About Us</h4>
+            <p>
+              Tech Store is your trusted online retailer for premium laptops and
+              tech products from world-class brands.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="brands.html">Products</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Customer Service</h4>
+            <ul>
+              <li><a href="#">Shipping Info</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Track Order</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Tech Store. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+    <script src="./chatbot.js"></script>
+  </body>
+</html>

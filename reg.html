@@ -1,0 +1,124 @@
+<!-- reg.html (NO Tailwind) -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reg.css" />
+    <title>Compu Store</title>
+    <link rel="icon" type="image/svg+xml" href="Images/iconTitle.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="./Images/logo.jfif" alt="logo-site" class="logo">
+      </a>
+      <h1><span>Compu Store</span></h1>
+    </div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">HP</a>
+      <a href="#">Dell</a>
+
+    </nav>
+
+    <a class="login-btn" href="logIn.html">Login</a>
+  </header> -->
+
+    <main>
+      <section class="card">
+        <a
+          href="index.html"
+          style="display: flex; justify-content: center; margin-bottom: 10px"
+        >
+          <img
+            src="./Images/iconTitle.svg"
+            alt="logo-site"
+            class="logo"
+            width="60px"
+            height="60px"
+          />
+        </a>
+        <h1>Compu Store</h1>
+        <p class="sub">Register to access exclusive Brands.</p>
+
+        <form id="regForm" novalidate>
+          <p id="msg" class="msg"></p>
+
+          <div>
+            <label for="fullName">Full Name</label>
+            <div class="input-wrap">
+              <span class="material-symbols-outlined">person</span>
+              <input id="fullName" type="text" placeholder="Full Name" />
+            </div>
+          </div>
+
+          <div>
+            <label for="email">Email Address</label>
+            <div class="input-wrap">
+              <span class="material-symbols-outlined">mail</span>
+              <input id="email" type="email" placeholder="name@example.com" />
+            </div>
+          </div>
+
+          <div>
+            <label for="password">Password</label>
+            <div class="input-wrap">
+              <span class="material-symbols-outlined">lock</span>
+              <input id="password" type="password" placeholder="••••••••" />
+            </div>
+          </div>
+
+          <div>
+            <label for="confirmPassword">Confirm Password</label>
+            <div class="input-wrap">
+              <span class="material-symbols-outlined">lock_reset</span>
+              <input
+                id="confirmPassword"
+                type="password"
+                placeholder="••••••••"
+              />
+            </div>
+          </div>
+
+          <div class="terms">
+            <input id="terms" type="checkbox" />
+            <label for="terms">
+              I agree to the
+              <a href="#" onclick="return false;">Terms and Conditions</a> and
+              the <a href="#" onclick="return false;">Privacy Policy</a>.
+            </label>
+          </div>
+
+          <button type="submit">Create Account</button>
+        </form>
+
+        <div class="bottom" style="font-size: 18px">
+          Already have an account?
+          <a href="logIn.html" style="font-size: 18px">Login here</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- <footer>
+    <p>Copyright © 2026 All Rights Reserved. Compu Store</p>
+  </footer> -->
+
+    <script src="./chatbot.js"></script>
+    <script src="reg.js"></script>
+  </body>
+</html>
