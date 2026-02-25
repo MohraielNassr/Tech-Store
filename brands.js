@@ -4,11 +4,14 @@ const searchInput = document.getElementById("searchInput");
 const brandCheckboxes = document.getElementsByClassName("brand-filter");
 const applyBtn = document.getElementById("apply-btn");
 const resetBtn = document.getElementById("reset-btn");
+const cartBadge = document.getElementById("cartCount");
 
 // Update login/logout button on page load
 document.addEventListener("DOMContentLoaded", () => {
   updateLoginButton();
+  updateCartBadge();
   window.addEventListener("storage", updateLoginButton);
+  window.addEventListener("storage", updateCartBadge);
 });
 
 function updateLoginButton() {
@@ -106,9 +109,16 @@ function addToCart(product) {
   }
 
   localStorage.setItem("cart", JSON.stringify(cart));
+  
   alert("Product added to cart 🛒");
+  updateCartBadge();
 }
-
+// Update cart badge 
+function updateCartBadge() {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const totalItems = cart.reduce((sum, item) => sum + (item.quantity || 1), 0);
+  cartBadge.textContent = totalItems;
+}
 // Filters
 applyBtn.onclick = function () {
   const searchValue = searchInput.value.toLowerCase();

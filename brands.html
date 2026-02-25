@@ -81,7 +81,7 @@
             (sum, item) => sum + (item.quantity || 1),
             0,
           );
-          document.getElementById("cart-badge").textContent = totalItems;
+          document.getElementById("cartCount").textContent = totalItems;
         }
         updateCartBadge();
         window.addEventListener("storage", updateCartBadge);
