@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function createChatbotWidget() {
   // Create chatbot container
   const chatbotHTML = `
-    <div id="chatbot-widget" class="chatbot-widget">
+    <div id="chatbot-widget" class="chatbot-widget hidden">
       <div class="chatbot-header">
         <div class="chatbot-title">
           <i class="fas fa-robot"></i> Tech Store Bot
@@ -155,7 +155,7 @@ function createChatbotWidget() {
     </div>
 
     <button id="chatbot-toggle" class="chatbot-toggle" onclick="toggleChatbot()">
-      <i class="fas fa-comments"></i>
+      <i class="fas fa-robot"></i>
     </button>
   `;
 
