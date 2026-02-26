@@ -195,23 +195,35 @@ function addChatbotStyles() {
     }
 
     .chatbot-widget {
-      position: fixed;
-      bottom: 100px;
-      right: 30px;
-      width: 380px;
-      max-height: 550px;
-      border-radius: 12px;
-      background: white;
-      box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
-      display: flex;
-      flex-direction: column;
-      z-index: 1000;
-      animation: slideUp 0.3s ease;
-    }
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  width: 380px;
+  max-height: 550px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
 
-    .chatbot-widget.hidden {
-      display: none;
-    }
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1000;
+
+  /* Animation Base State */
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: all 0.3s ease;
+}
+
+.chatbot-widget.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  visibility: visible;
+  pointer-events: all;
+}
 
     @keyframes slideUp {
       from {
@@ -384,10 +396,7 @@ function addChatbotStyles() {
 
 function toggleChatbot() {
   const widget = document.getElementById("chatbot-widget");
-  const toggle = document.getElementById("chatbot-toggle");
-
-  widget.classList.toggle("hidden");
-  toggle.classList.toggle("hidden");
+  widget.classList.toggle("show");
 }
 
 function sendChatbotMessage() {

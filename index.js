@@ -174,6 +174,7 @@ function updateLoginButton() {
 // Logout function
 function logout() {
   localStorage.removeItem("currentUser");
+  localStorage.removeItem("cart");
   window.location.href = "./index.html";
 }
 
